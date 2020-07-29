@@ -10,6 +10,8 @@ apt-get install python3 python3-pip python3-dev git libssl-dev libffi-dev build-
 # pip
 apt-get install python-pip
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+pip install opencv-python --timeout=1000
+pip install matplotlib
 # mkdir
 mkdir /root/Desktop/ctf
 cd /root/Desktop/ctf
@@ -21,6 +23,8 @@ apt-get install imagemagick
 apt-get install exiftool
 # steghide
 apt-get install steghide
+# 盲水印
+git lone https://github.com/chishaxie/BlindWaterMark
 # outguess隐写
 git clone https://github.com/crorvick/outguess
 # F5隐写
