@@ -4,7 +4,6 @@ rm /etc/apt/sources.list
 echo "deb http://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free" > /etc/apt/sources.list
 echo "deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list
 apt-get update
-apt-get upgrade -y
 # base
 apt-get install -y python3 python3-pip python3-dev git libssl-dev libffi-dev build-essential
 # pip
@@ -24,7 +23,7 @@ apt-get install -y exiftool
 # steghide
 apt-get install -y steghide
 # 盲水印
-git lone https://github.com/chishaxie/BlindWaterMark
+git clone https://github.com/chishaxie/BlindWaterMark
 # outguess隐写
 git clone https://github.com/crorvick/outguess
 # F5隐写
