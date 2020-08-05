@@ -12,8 +12,8 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 pip install opencv-python --timeout=1000
 pip install matplotlib
 # mkdir
-mkdir /root/Desktop/ctf
-cd /root/Desktop/ctf
+mkdir /root/ctf
+cd /root/ctf
 # volatility
 apt-get install -y volatility
 # foremost
