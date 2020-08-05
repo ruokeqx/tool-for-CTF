@@ -14,6 +14,8 @@ pip install matplotlib
 # mkdir
 mkdir /root/Desktop/ctf
 cd /root/Desktop/ctf
+# volatility
+apt-get install -y volatility
 # foremost
 apt-get install -y foremost
 # imagemagick(convert)
