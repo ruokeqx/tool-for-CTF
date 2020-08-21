@@ -29,6 +29,12 @@ git clone https://github.com/chishaxie/BlindWaterMark
 git clone https://github.com/matthewgao/F5-steganography
 # lsb
 git clone https://github.com/livz/cloacked-pixel
+# RSA
+git clone https://github.com/Ganapati/RsaCtfTool
+sudo apt-get install -y libgmp3-dev libmpc-dev
+cd RsaCtfTool
+pip3 install -r requirements.txt -y
+cd ../
 # outguess隐写
 git clone https://github.com/crorvick/outguess
 cd outguess
