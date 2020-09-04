@@ -9,8 +9,8 @@ sudo apt-get install -y python-pip
 sudo apt-get install -y python3-pip
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 # mkdir
-mkdir ~/ctf
-cd ~/ctf
+mkdir -p ~/ctf/tool
+cd ~/ctf/tool
 # volatility
 sudo apt-get install -y volatility
 # foremost
@@ -23,6 +23,12 @@ sudo apt-get install -y imagemagick
 sudo apt-get install -y exiftool
 # steghide
 sudo apt-get install -y steghide
+# gaps
+git clone https://github.com/nemanja-m/gaps
+cd gaps
+pip3 install numpy opencv-python pytest matplotlib pillow
+python3 setup.py install
+cd ../
 # 盲水印
 git clone https://github.com/chishaxie/BlindWaterMark
 # F5隐写
@@ -41,6 +47,7 @@ cd outguess
 sudo ./configure
 sudo make
 sudo make install
+cd ../
 # zsteg
 gem sources --remove https://rubygems.org/
 gem sources --add https://gems.ruby-china.com/
